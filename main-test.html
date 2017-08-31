@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+<!--
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+-->
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">-->
+
+<style>
+    body {
+        padding: 30px;
+    }
+    </style>
+</head>
+<body>
+
+<div class="dropdown" onclick="$('#test').hide()">
+    <button class="btn btn-info dropdown-toggle" data-toggle="dropdown">List <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">jQuery</a></li>
+    </ul>
+</div>
+
+<br>
+<div class="panel panel-success">
+    <div class="panel-heading">Some text</div>
+    <div class="panel-body">Some text</div>
+    <!--<div class="panel-footer">Some text</div>-->
+</div>
+<br>
+<button class="btn btn-success">
+    <i class="glyphicon glyphicon-off"></i>
+     Allright
+</button>
+
+<span class="badge" style="color: white; background-color: crimson">5</span>
+<br>
+<img id="test" src="http://theclipartjar.com/images/LTd57ozKc.png" alt="Logo" class="img-responsive">
+<br><hr><br>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="#" class="navbar-brand">SITE-ONE</a>
+        </div>
+        <div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li class="active"><a href="#">About</a></li>
+                <li class="active"><a href="#">Refer</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<button class="btn btn-default">
+    Default
+</button>
+
+<input type="submit" class="btn btn-primary" value="Main">
+<input type="button" class="btn btn-success" value="Confirm">
+<a href="#" class="btn btn-info" role="button">Notification</a>
+<button class="btn btn-warning">
+    Warning
+</button>
+<button class="btn btn-danger">
+    Danger
+</button>
+<button class="btn btn-link">
+    link
+</button>
+<br><br>
+<button class="btn btn-default btn-lg">
+    button
+</button>
+<button class="btn btn-default btn-md">
+    button
+</button>
+<button class="btn btn-default btn-sm">
+    button
+</button>
+<button class="btn btn-default btn-xs">
+    button
+</button>
+<br><br>
+<button class="btn btn-success btn-block">
+    button
+</button>
+<br><br>
+<div class="btn-toolbar" role="toolbar">
+    <div class="btn-group btn-group-lg" data-toggle="buttons">
+        <label class="btn btn-primary">
+            <input type="checkbox">Parameter 1
+        </label>
+            <label class="btn btn-primary">
+            <input type="checkbox">Parameter 2
+        </label>
+            <label class="btn btn-primary">
+            <input type="checkbox">Parameter 3
+        </label>
+    </div>
+        <div class="btn-group btn-group-lg" data-toggle="buttons">
+        <label class="btn btn-primary">
+            <input type="checkbox">Parameter 1
+        </label>
+            <label class="btn btn-primary">
+            <input type="checkbox">Parameter 2
+        </label>
+            <label class="btn btn-primary">
+            <input type="checkbox">Parameter 3
+        </label>
+    </div>
+</div>
+<br><br>
+    <div class="btn-group btn-group-vertical" data-toggle="buttons">
+        <label class="btn btn-primary">
+            <input type="checkbox">Parameter 1
+        </label>
+            <label class="btn btn-primary">
+            <input type="checkbox">Parameter 2
+        </label>
+            <label class="btn btn-primary">
+            <input type="checkbox">Parameter 3
+        </label>
+    </div>
+    <br><br>
+    
+    <div class="container">
+        <form role="form" class="form-horizontal">
+            <div class="form-group">
+                <label for="email" class="control-label col-md-2">Email</label>
+                <div class="col-md-10">
+                    <input type="email" class="form-control" id="email" placeholder="Email">
+                </div>
+                <!--<p class="help-block">Enter your email address.</p>-->
+            </div>
+            <select name="" id="" class="form-control">
+                <option value="One">One</option>
+                <option value="two">Two</option>
+                <option value="three">Three</option>
+            </select>
+            <div class="radio-inline">
+                <label for="radio1">
+                    <input type="radio" name="optionsRadios" id="radio1" value="option1" checked>
+                    First element
+                </label>
+            </div>
+            <div class="radio-inline">
+                <label for="radio2">
+                    <input type="radio" name="optionsRadios" id="radio2" value="option2">
+                    Second element
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="password" class="control-label col-md-2">Password</label>
+                <div class="col-md-10">
+                    <input type="password" class="form-control" id="password" placeholder="Password">
+                </div>
+                <!--<p class="help-block">Enter your password.</p>-->
+            </div>
+            <div class="checkbox">
+                <label for="checkbox">
+                <input type="checkbox" id="checkbox"> Checkbox
+                </label>
+            </div>
+            <button type="button" class="btn btn-success">Confirm</button>
+        </form>
+    </div>
+    
+    <div class="container">
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label for="" class="col-sm-2 control-label">Your email</label>
+                <div class="col-sm-10">
+                    <p class="form-control-static">Test@test.com</p>
+                </div>
+            </div>
+            <div class="form-group has-error">
+                <label for="pass" class="col-sm-2 control-label">Password</label>
+                <div class="col-sm-10">
+                    <input type="password" id="pass" class="form-control" placeholder="Email">
+                </div>
+            </div>
+        </form>
+    </div>
+    <br><hr><br>
+<!--    <div class="container">
+        <h1>3 different blocks</h1>
+        <div class="row">
+            <div class="col-md-1" style="background-color: bisque">left</div>
+            <div class="col-md-10" style="background-color: cadetblue">left</div>
+            <div class="col-md-1" style="background-color: crimson">left</div>
+        </div>
+    </div>-->
+    
+    <h1>Some text</h1>
+    <h2>Some text</h2>
+    <h3>Some text</h3>
+    <h4>Some text</h4>
+    <h5>Some text</h5>
+    <h6>Some text</h6>
+<!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
