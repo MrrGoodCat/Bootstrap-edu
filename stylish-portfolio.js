@@ -8,17 +8,36 @@
   "use strict"; // Start of use strict
 
   // Closes the sidebar menu
-  $("#menu-close").click(function(e) {
-    e.preventDefault();
-    $("#sidebar-wrapper").toggleClass("active");
-  });
-
-  // Opens the sidebar menu
-  $("#menu-toggle").click(function(e) {
-    e.preventDefault();
-    $("#sidebar-wrapper").toggleClass("active");
-  });
-
+//  $("#menu-close").click(function(e) {
+//    e.preventDefault();
+//    $("#sidebar-wrapper").toggleClass("active");
+//  });
+var isMenuOpen = false;
+//  // Opens the sidebar menu
+//  $("#menu-toggle").click(function(e) {
+//    e.preventDefault();
+//    $("#sidebar-wrapper").toggleClass("active");
+//  });
+    
+$("#menu-toggle").bind("click", function(e) {
+    if(!isMenuOpen)
+        {
+            $("#sidebar-wrapper").fadeIn(500);
+            isMenuOpen = true;
+        }
+    else
+        {
+            $("#sidebar-wrapper").fadeOut(500);
+            isMenuOpen = false;
+        }
+});
+    
+    
+//    $(document).ready(function() {
+//    $(document).on("click", "#menu-toggle", function(){
+//        $("#sidebar-wrapper").hide();
+//    });
+//    });
     
   // Smooth scrolling using jQuery easing
 
