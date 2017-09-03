@@ -63,13 +63,21 @@
 <!--   Navigation   -->
    <a href="#" id="menu-toggle" class="btn btn-dark btn-lg toggle">
           <i class="fa fa-bars fa-2x"></i>
-   </a>
+     </a>
    
    <nav id="sidebar-wrapper" class="">
        <ul class="sidebar-nav">
+           
+        <a href="#" id="menu-close" class="btn btn-dark pull-right btn-lg toggle">
+            <i class="fa fa-bars fa-2x"></i>
+           </a>
+           
+<!--
             <a href="#" id="menu-close" class="btn btn-light pull-right btn-lg toggle">
                 <i class="fa fa-times fa-2x"></i>
             </a>
+-->
+            
             <li class="sidebar-brand">
                 <a class="js-scroll-trigger brand" href="#top">Site One</a>
             </li>
@@ -91,6 +99,31 @@
        </ul>
    </nav>
  
+ <nav id="sidebar-small">
+     <div id="menu-toggle-small" class="sidebar-nav-small list-group">
+
+        <a href="#top" class="btn btn-dark btn-lg list-group-item" onclick="$('#menu-close').click()">
+            <i class="fa fa-home fa-2x fa-fw" ></i>&nbsp; Home
+        </a>        
+
+        <a href="#about" class="btn btn-dark btn-lg list-group-item" onclick="$('#menu-close').click()">
+            <i class="fa fa-info fa-2x fa-fw" ></i>&nbsp; About
+        </a>
+
+        <a href="#services" class="btn btn-dark btn-lg list-group-item" onclick="$('#menu-close').click()">
+            <i class="fa fa-cogs fa-2x fa-fw" ></i>&nbsp; Services
+        </a>
+
+        <a href="#portfolio" class="btn btn-dark btn-lg list-group-item" onclick="$('#menu-close').click()">
+            <i class="fa fa-briefcase fa-2x fa-fw" ></i>&nbsp; Portfolio
+        </a>
+
+        <a href="#contact" class="btn btn-dark btn-lg list-group-item" onclick="$('#menu-close').click()">
+            <i class="fa fa-phone fa-2x fa-fw" ></i>&nbsp; Contact
+        </a>
+
+     </div>
+ </nav>
 <!--   Header   -->
 <header class="header" id="top">
    <div class="text-vertical-center">

@@ -7,35 +7,47 @@
 (function($) {
   "use strict"; // Start of use strict
 
+//    var isMenuOpen = false;
   // Closes the sidebar menu
-//  $("#menu-close").click(function(e) {
-//    e.preventDefault();
-//    $("#sidebar-wrapper").toggleClass("active");
-//  });
-var isMenuOpen = false;
-//  // Opens the sidebar menu
-//  $("#menu-toggle").click(function(e) {
-//    e.preventDefault();
-//    $("#sidebar-wrapper").toggleClass("active");
-//  });
-    
-$("#menu-toggle").bind("click", function(e) {
-    if(!isMenuOpen)
-        {
-            $("#sidebar-wrapper").fadeIn(500);
-            isMenuOpen = true;
-        }
-    else
-        {
-            $("#sidebar-wrapper").fadeOut(500);
-            isMenuOpen = false;
-        }
-});
+  $("#menu-close").click(function(e) {
+    e.preventDefault();
+    $("#sidebar-wrapper").toggleClass("active");
+  });
+
+  // Opens the sidebar menu
+  $("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#sidebar-wrapper").toggleClass("active");
+  });
+
+  // Opens the sidebar menu
+  $("#menu-toggle").hover(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("hover");
+  });
+//$("#menu-toggle").bind("click", function(e) {
+//    if(!isMenuOpen)
+//        {
+//            $("#sidebar-wrapper").fadeIn(500);
+//            isMenuOpen = true;
+//        }
+//    else
+//        {
+//            $("#sidebar-wrapper").fadeOut(500);
+//            isMenuOpen = false;
+//        }
+//});
     
     
 //    $(document).ready(function() {
 //    $(document).on("click", "#menu-toggle", function(){
-//        $("#sidebar-wrapper").hide();
+//        $("#sidebar-wrapper").show(1000);
+//    });
+//    });
+//    
+//    $(document).ready(function() {
+//    $(document).on("click", "#menu-close", function(){
+//        $("#sidebar-wrapper").hide(1000);
 //    });
 //    });
     
