@@ -4,54 +4,42 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
+var isMenuOpen = false;
+
 (function($) {
   "use strict"; // Start of use strict
 
-//    var isMenuOpen = false;
-  // Closes the sidebar menu
-  $("#menu-close").click(function(e) {
+  // Opens the sidebar menu
+  $("#menu-container-toggle").click(function(e) {
     e.preventDefault();
-    $("#sidebar-wrapper").toggleClass("active");
+      if(isMenuOpen)
+          {
+            $("#menu-container").removeClass("active", 50);
+            isMenuOpen = false;
+          }
+      else if(!isMenuOpen)
+          {
+            $("#menu-container").addClass("active", 50);
+            isMenuOpen = true;  
+          }
   });
 
-  // Opens the sidebar menu
-  $("#menu-toggle").click(function(e) {
+  // Expands the sidebar menu
+  $("#sidebar-menu").hover(function(e) {     
     e.preventDefault();
-    $("#sidebar-wrapper").toggleClass("active");
+      if(!isMenuOpen)
+          {
+            $(".menu-child").toggleClass("hover-efect");
+          }
   });
-
-  // Opens the sidebar menu
-  $("#menu-toggle").hover(function(e) {
+    
+    $(".menu-child").click(function (e) {
         e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("hover");
-  });
-//$("#menu-toggle").bind("click", function(e) {
-//    if(!isMenuOpen)
-//        {
-//            $("#sidebar-wrapper").fadeIn(500);
-//            isMenuOpen = true;
-//        }
-//    else
-//        {
-//            $("#sidebar-wrapper").fadeOut(500);
-//            isMenuOpen = false;
-//        }
-//});
+        $("#menu-container").removeClass("active", 50);
+        isMenuOpen = false;
+    });
     
-    
-//    $(document).ready(function() {
-//    $(document).on("click", "#menu-toggle", function(){
-//        $("#sidebar-wrapper").show(1000);
-//    });
-//    });
-//    
-//    $(document).ready(function() {
-//    $(document).on("click", "#menu-close", function(){
-//        $("#sidebar-wrapper").hide(1000);
-//    });
-//    });
-    
-  // Smooth scrolling using jQuery easing
+// Smooth scrolling using jQuery easing
 
 // Select all links with hashes
 $('a[href*="#"]')
